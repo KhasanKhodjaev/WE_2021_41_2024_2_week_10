@@ -1,10 +1,47 @@
 from typing import List
 
-def twoSum(nums: List[int], target: int) -> List[int]:
-    num_to_index = {}
-    for index, num in enumerate(nums):
-        complement = target - num
-        if complement in num_to_index:
-            return [num_to_index[complement], index]
-        num_to_index[num] = index
-    raise ValueError('No solution to given problem')
+# Skeleton code for even_list
+def even_list(int_list: List[int]) -> List[int]:
+    """
+    Determines if a number is even and returns an even list.
+    
+    Args:
+        int_list: A list of integers.
+        
+    Returns:
+        A list of even integers.
+    """
+    # TODO: Implement even_list
+    pass
+
+# Skeleton code for sum_of_squares_of_even
+def sum_of_squares_of_even(even_int_list: List[int]) -> int:
+    """
+    Computes the sum of the squares of all even numbers in a list.
+    
+    Args:
+        even_int_list: A list of even integers.
+        
+    Returns:
+        The sum of the squares of all even numbers in the list.
+    """
+    # TODO: Implement sum_of_squares_of_even
+    pass
+
+# Main function
+def main():
+    # Example list
+    int_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    
+    # Get the list of even integers
+    even_int_list = even_list(int_list)
+    
+    # Calculate the sum of squares of the even integers
+    output = sum_of_squares_of_even(even_int_list)
+    
+    # Print the result
+    print(output)
+
+# Boilerplate code
+if __name__ == "__main__":
+    main()
